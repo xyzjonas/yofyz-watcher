@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="Theme.Sample.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Sample.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Sample.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="OptionsTheme">
+
+    </style>
+
+    <style name="MyButton" parent="android:Widget.Button"/>
+
+</resources>

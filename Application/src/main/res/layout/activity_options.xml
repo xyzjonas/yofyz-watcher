@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swiperefresh"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="@dimen/margin_small"
+    tools:context=".options.OptionsActivity">
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:layout_marginTop="20sp"
+        android:id="@+id/options_status_combo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/options_service_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:text="Service is:" />
+        <TextView
+            android:id="@+id/options_service_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="STOPPED" />
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/options_status_combo"
+        android:id="@+id/separator1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#4C5760" />
+
+    <LinearLayout
+        android:layout_below="@+id/separator1"
+        android:id="@+id/url_combo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:orientation="vertical">
+    <TextView
+        android:text="URL:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/options_url_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://yofyz.diva2.cz/" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/url_combo"
+        android:layout_marginTop="20dp"
+        android:background="#4C5760" />
+
+    <LinearLayout
+        android:layout_below="@id/separator2"
+        android:id="@+id/filter_combo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/filter_label"
+            android:text="Filter by instructor:"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/options_spinner_instructor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separator3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/filter_combo"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#4C5760" />
+
+    <LinearLayout
+        android:layout_below="@id/separator3"
+        android:id="@+id/toggle_combo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/options_tservice_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toggle background service:" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/options_changed_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE" />
+        <Button
+            android:layout_below="@+id/options_changed_button"
+            android:id="@+id/options_clear_db"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLEAR ALL" />
+    </RelativeLayout>
+
+</RelativeLayout>

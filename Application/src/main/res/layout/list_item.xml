@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_margin="@dimen/margin_small"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+    <TableRow>
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12.13.2020"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yoga class number 1"
+            android:textSize="20sp"
+            android:layout_gravity="start"
+            android:textStyle="bold"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+        android:id="@+id/capacity"
+        android:text="4 volne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"/>
+    </TableRow>
+
+
+    <TableRow>
+    <TextView
+        android:id="@+id/item_instructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal"
+        android:text="Helena Vostra"
+        android:layout_weight="2"
+        android:textSize="16dip"
+        android:textStyle="bold"/>
+    </TableRow>
+</TableLayout>
